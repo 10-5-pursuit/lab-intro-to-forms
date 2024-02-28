@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab - Intro To Forms</title>
+</head>
+<body>
+    <h1>Payment Form</h1>
+    <p>Required fields are marked by *</p>
+
+    <section>
+    <fieldset>
+        <legend>Contact Information</legend>
+
+        <label for="mx">Mx.</label><br>
+        <input type="radio" id="mx" value="mx" name="customer_title" checked><br>
+
+        <label for="mr">Mr.</label><br>
+        <input type="radio" id="mr" value="mr" name="customer_title"><br>
+
+        <label for="ms">Ms.</label><br>
+        <input type="radio" id="ms" value="ms" name="customer_title"><br>
+
+        <label for="mrs">Mrs.</label><br>
+        <input type="radio" id="mrs" value="mrs" name="customer_title"><br>
+
+        <label for="name">Name</label><br>
+        <input type="text" id="name" name="name"><br>
+
+        <label for="email">Email</label><br>
+        <input type="text" id="email" name="email"><br>
+    </fieldset>
+    </section>
+
+    <section>
+        <fieldset>
+            <legend>Payment Information</legend>
+    
+            <label for="credit-card">Credit Card Type</label><br>
+            <select name="credit-card" id="credit-card">
+                <option id="visa" value="visa">Visa</option><label for="visa">Visa</label>
+                <option id="mastercard" value="mastercard">Mastercard</option><label for="mastercard">Mastercard</label>
+                <option id="american-express" value="american-express">American Express</option><label for="american-express">American Express</label>
+                <option id="discover" value="discover">Discover</option><label for="discover">Discover</label>
+                
+            </select><br><br>
+
+            <label>Credit Card Number</label><br>
+            <input type="tel" placeholder="xxxx-xxxx-xxxx-xxxx" required><br><br>
+
+            <label for="exp">Expiration Date</label><br>
+            <input type="text" id="exp" name="exp" required><br>
+        </fieldset>
+        </section>
+
+        <input type="button" value="Submit Payment">
+</body>
+<style>
+input[type=text],input[type=tel],select{
+    border-color: black;
+}
+input[type=button], select{
+    cursor: pointer;
+}
+
+</style>
+</html>
