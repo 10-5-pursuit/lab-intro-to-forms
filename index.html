@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset='UTF-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+        <title>Payment Form</title>
+    </head>
+    <body>
+        <header>
+            <h1>Payment Form</h1>
+        </header>
+        <section>
+            <p>Required fields are marked by *</p>
+        </section>
+        <form>
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label for='mx'>Mx.</label><br>
+                <input type='radio' id='mx' name='mx' value='mx' style="cursor: pointer;" checked><br>
+                <label for='mr'>Mr.</label><br>
+                <input type='radio' id='mr' name='mr' value='mr' style="cursor: pointer;"><br>
+                <label for='ms'>Ms.</label><br>
+                <input type='radio' id='ms' name='ms' value='ms' style="cursor: pointer;"><br>
+                <label for='mrs'>Mrs.</label><br>
+                <input type='radio' id='mrs' name='mrs' value='mrs' style="cursor: pointer;"><br>
+                <label for='name'>Name *</label><br>
+                <input type='text' id='name' name='name' required><br>
+                <label for='email'>Email *</label><br>
+                <input type='email' id='email' name='email' required><br>
+            </fieldset>
+            <fieldset>
+                <legend>Payment Information</legend>
+                <label for='card_type'>Card Type</label><br>
+                <select name="card_type" id="card_type" style="cursor: pointer;">
+                        <option value="visa">Visa</option>
+                        <option value="mastercard">Mastercard</option>
+                        <option value="american_express">American Express</option>
+                        <option value="discover">Discover</option>
+                </select> <br>
+                <label for='ccNum'>Credit Card Number *</label><br>
+                <input type='tel' id='ccNum' name='ccNum' placeholder="xxxx xxxx xxxx xxxx" required><br>
+                <label for='expiration-date'>Expiration Date *</label><br>
+                <input type='text' id='expiration-date' name='expiration-date' required><br>
+            </fieldset>
+            <button type="submit">Submit Payment</button>
+        </form>
+        <script>
+            const radioButtons = document.querySelectorAll('input[type="radio"]');
+            radioButtons.forEach(radioButton => {
+                radioButton.addEventListener('change', function() {
+                    radioButtons.forEach(rb => {
+                        rb.checked = false;
+                    });
+                    this.checked = true;
+                });
+            });
+        </script>
+    </body>
+</html>
