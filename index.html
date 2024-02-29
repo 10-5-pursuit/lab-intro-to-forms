@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Payment Form</h1>
+    <p>Require fields are marked by *</p>
+    <form>
+    <fieldset><legend>Contact Information</legend>
+    
+        <div>
+            <label for="mx">Mx.</label><br>
+            <input type="radio" id="Mx" name="contact-info" value="Mx">
+        </div>
+            <div>
+            <label for="mr">Mr.</label><br>
+            <input type="radio" id="mr" name="contact-info" value="Mr">
+            </div>
+        <div>
+            <label for="ms">Ms.</label><br>
+            <input type="radio" id="ms" name="contact-info" value="Ms">
+            </div>
+        <div>
+            <label for="person_name">Name</label><br>
+            <input type="text" name="box">
+            </div>
+        <div>
+            <label for="email">Email</label><br>
+            <input type="text" name="email">    
+        </div>       
+    </fieldset>
+        <fieldset><legend>Payment Information</legend>
+    <select name="credit-card" id="credit-card">
+        <option value="Visa">Visa</option>
+        <option value="MasterCard">Master Card</option>
+        <option value="Discover">Discover</option>
+    </select>
+        <label for="Credit"> Credit Card Number</label>
+    <br>
+        <input type="text" name="credit-card-numbers"placeholder="xxxx xxxx xxxx xxxx">
+    <br>
+        <label for="Date">Expiration Date</label><br>
+        <input type="text">
+    </fieldset>
+        <input type="submit" value="Submit Payment">
+
+</form>
+</body>
+</html>
