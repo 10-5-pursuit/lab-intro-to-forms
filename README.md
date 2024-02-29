@@ -22,25 +22,25 @@ Update the `index.html` file to display a form for entering payment information.
 
 In addition to looking similar to the image above, make sure you meet the following requirements:
 
-- [ ] Your submit button should be an `input` element, with the text `Submit Payment`.
+- [x] Your submit button should be an `input` element, with the text `Submit Payment`.
 
-- [ ] You should have all four radio buttons listed above.
+- [x] You should have all four radio buttons listed above.
 
-- [ ] The first radio button should be `checked` by default.
+- [x] The first radio button should be `checked` by default.
 
-- [ ] The other radio buttons should be deselected when a radio button is clicked.
+- [x] The other radio buttons should be deselected when a radio button is clicked.
 
-- [ ] The Name field should be a text input, have a corresponding label tag, have an id of `name`, and be required.
+- [x] The Name field should be a text input, have a corresponding label tag, have an id of `name`, and be required.
 
-- [ ] The Email field should be an email input, have a corresponding label tag, have an id of `email`, and be required.
+- [x] The Email field should be an email input, have a corresponding label tag, have an id of `email`, and be required.
 
-- [ ] The Dropdown should include four options: "Visa", "Mastercard", "American Express", and "Discover".
+- [x] The Dropdown should include four options: "Visa", "Mastercard", "American Express", and "Discover".
 
-- [ ] The Dropdown option's values should be "visa", "mastercard", "american-express", and "discover".
+- [x] The Dropdown option's values should be "visa", "mastercard", "american-express", and "discover".
 
-- [ ] The Credit Card field should be a `tel` type, have a placeholder of `xxxx xxxx xxxx xxxx`, and be required.
+- [x] The Credit Card field should be a `tel` type, have a placeholder of `xxxx xxxx xxxx xxxx`, and be required.
 
-- [ ] The Expiration Date field should be a `text` type, have a corresponding label tag, have an id of `expiration-date`, and be required.
+- [x] The Expiration Date field should be a `text` type, have a corresponding label tag, have an id of `expiration-date`, and be required.
 
 ### Bonus
 

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment Form</title>
+  </head>
+  <body>
+    <h1>Payment Form</h1>
+    <p>Required fields are marked by *</p>
+    <form action="">
+      <!-- Contact Information -->
+      <fieldset>
+        <legend>Contact Information</legend>
+        <!-- Radio Buttons -->
+        <div>
+          <div>
+            <input
+              type="radio"
+              id="mx"
+              name="marital-status"
+              value="mx"
+              checked
+            />
+            <label for="mx">Mx.</label>
+          </div>
+          <div>
+            <input type="radio" id="mr" name="marital-status" value="mr" />
+            <label for="mr">Mr.</label>
+          </div>
+          <div>
+            <input type="radio" id="ms" name="marital-status" value="ms" />
+            <label for="ms">Ms.</label>
+          </div>
+          <div>
+            <input type="radio" id="mrs" name="marital-status" value="mr" />
+            <label for="mrs">Mrs.</label>
+          </div>
+        </div>
+        <!-- Name -->
+        <div>
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" required />
+        </div>
+        <!-- Email -->
+        <div>
+          <label for="Email">Email</label>
+          <input type="email" name="email" id="email" required />
+        </div>
+      </fieldset>
+      <!-- Payment Information -->
+      <fieldset>
+        <legend>Payment Information</legend>
+        <div>
+          <!-- <label for="card-provider">Card Provider</label> -->
+          <select name="card-provider" id="card-provider">
+            <option value="visa">Visa</option>
+            <option value="mastercard">Master Card</option>
+            <option value="american-express">American Express</option>
+            <option value="discover">Discover</option>
+          </select>
+        </div>
+        <div>
+          <label for="crad-number">Credit Card Number</label>
+          <input
+            type="tel"
+            id="card-number"
+            name="card-number"
+            pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}"
+            placeholder="xxxx xxxx xxxx xxxx"
+            required
+          />
+        </div>
+        <div>
+          <label for="expiration-date">Expirantion Date</label>
+          <input type="text" name="expiration-date" id="expiration-date" />
+        </div>
+      </fieldset>
+      <input type="submit" value="Submit Payment" />
+    </form>
+  </body>
+</html>
