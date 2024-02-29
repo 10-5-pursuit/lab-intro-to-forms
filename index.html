@@ -7,7 +7,7 @@
 </head>
 <body>
     
-    <article>
+    <form>
 
         <header>
             <h1>Payment Form</h1>
@@ -42,25 +42,26 @@
             </fieldset>
 
             <fieldset name="payment-information"><legend>Payment Information</legend>
+                <label for="credit-card">Credit Card Number*</label>
+                <br>
                 <select name="credit-card" id="credit-card">
                     <option value="visa">Visa</option>
                     <option value="mastercard">Mastercard</option>
                     <option value="american-express">American Express</option>
                     <option value="Discover">Discover</option>
                 </select>
-                <label for="credit-card">Credit Card Number*</label>
                 <br>
                 <input type="text" placeholder="xxxx-xxxx-xxxx-xxxx" required>
                 <br>
                 <label for="expiration-date">Expiration Date*</label>
                 <br>
-                <input type="text" name="expiration-date" id="expiration-date">
+                <input type="text" name="expiration-date" id="expiration-date" required>
                 <br>
                 <input type="button" value="Submit Payment">
             </fieldset>
         </main>
 
-    </article>
+    </form>
 
 </body>
 </html>
