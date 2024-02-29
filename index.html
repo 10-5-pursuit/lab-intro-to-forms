@@ -14,47 +14,50 @@
             Required fields are marked by *
         </p>
     </section>
-    <fieldset>
-        <legend>Contact Information</legend>
 
-        <label for="titleMx">Mx.</label><br>
-        <input type="radio" id="titleMx" name="title" value="Mx" checked><br>
-        <label for="titleMr">Mr.</label><br>
-        <input type="radio" id="titleMx" name="title" value="Mx"><br>
-        <label for="titleMs">Ms.</label><br>
-        <input type="radio" id="titleMx" name="title" value="Mx"><br>
-        <label for="titleMrs">Mrs.</label><br>
-        <input type="radio" id="titleMx" name="title" value="Mx"><br>
+    <form action="/submit-method" method="post">
 
-        <label for="name">Name</label><br>
-        <input type="text" id="name" name="name" required><br>
-        <label for="email">Email</label><br>
-        <input type="email" id="email" name="email" required><br>
+        <fieldset>
+            <legend>Contact Information</legend>
 
-    </fieldset>
+            <label for="titleMx">Mx.</label><br>
+            <input type="radio" id="titleMx" name="title" value="Mx" checked><br>
+            <label for="titleMr">Mr.</label><br>
+            <input type="radio" id="titleMx" name="title" value="Mx"><br>
+            <label for="titleMs">Ms.</label><br>
+            <input type="radio" id="titleMx" name="title" value="Mx"><br>
+            <label for="titleMrs">Mrs.</label><br>
+            <input type="radio" id="titleMx" name="title" value="Mx"><br>
 
-    <fieldset>
-        <legend>Payment Information</legend>
-        <select id="cardType" name="cardType" required>
+            <label for="name">Name</label><br>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Email</label><br>
+            <input type="email" id="email" name="email" required><br>
 
-            <option value="visa">Visa</option>
-            <option value="mastercard">Mastercard</option>
-            <option value="american-express">America Express</option>
-            <option value="Discover">Discover</option>
+        </fieldset>
 
-        </select>
-        <label for="cardType">Credit Card Number</label><br>
+        <fieldset>
+            <legend>Payment Information</legend>
+            <select id="cardType" name="cardType" required>
 
+                <option value="visa">Visa</option>
+                <option value="mastercard">Mastercard</option>
+                <option value="american-express">America Express</option>
+                <option value="Discover">Discover</option>
 
-        <input type="tel" id="cardNumber" name="cardNumber" placeholder="xxxx xxxx xxxx xxxx" required><br>
-
-        <label for="expiration-date">Expiration Date</label><br>
-        <input type="text" id="expiration-date" name="expiration-date" placeholder="MM/YY" required><br>
-
-    </fieldset>
+            </select>
+            <label for="cardType">Credit Card Number</label><br>
 
 
+            <input type="tel" id="cardNumber" name="cardNumber" placeholder="xxxx xxxx xxxx xxxx" required><br>
 
+            <label for="expiration-date">Expiration Date</label><br>
+            <input type="text" id="expiration-date" name="expiration-date" placeholder="MM/YY" required><br>
+
+        </fieldset>
+
+        <input type="submit" value="Submit Payment">
+    </form>
 </body>
 
 </html>
