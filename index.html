@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Payment Form</h1>
+    <form class="payment-form">
+        <p>Required fields are marked by *</p>
+        <fieldset><legend>Contact Information</legend>
+            <div class="surnames">
+            <label>Mx.</label>
+            <br>
+            <input type="radio" name="surname" id="surname">
+            <br>
+            <label>Mr.</label>
+            <br>
+        <input type="radio" name="surname" id="surname">
+            <br>
+        <label>Ms.</label>
+        <br>
+        <input type="radio" name="surname" id="surname">
+        <br>
+        <label>Mrs.</label>
+        <br>
+        <input type="radio" name="surname" id="surname">
+        <br>
+    </div>
+    
+        <label for="text">Name</label>
+        <br>
+        <textarea name="name" id="name" cols="30" rows="1"></textarea> 
+        <br>
+        <label for="email">Email</label>
+        <br>
+        <textarea name="email" id="email" cols="30" rows="1"></textarea>
+        
+        </fieldset>
+        <fieldset>
+            <Legend>Payment Information</Legend>
+            <select name="" id="">
+                <option value="card-type">Visa</option>
+                <option value="card-type">Mastercard</option>
+                <option value="card-type">Discover</option>
+                <option value="card-type">Union</option>
+            </optgroup>
+        </select>
+            <label for="credit-number-label">Credit Card Number</label>
+            <br>
+        <textarea name="credit-number" id="credit-number" cols="30" rows="1" placeholder="xxxx xxxx xxxx xxxx"></textarea>
+        <br>
+        <label for="expiry-date">Expiration Date</label>
+        <br>
+        <textarea name="" id="" cols="30" rows="1"></textarea>
+        </fieldset>
+        <button>Submit Payment</button>
+
+
+    </form>
+    
+</body>
+</html>
