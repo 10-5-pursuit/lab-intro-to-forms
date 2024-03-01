@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment Form</title>
+    <style>
+        fieldset {
+            border: 2px solid #ccc;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Payment Form</h1>
+    <p>Required fields are marked by *</p>
+
+    <fieldset>
+        <legend>Contact Information</legend>
+        <form action="index.html" method="post" id="contact">
+            <div>
+                <label for="mx">Mx.</label> <br />
+                <input type="radio" id="mx" name="title" />
+            </div>
+            <div>
+                <label for="mr">Mr.</label> <br />
+                <input type="radio" id="mr" name="title" />
+            </div>
+            <div>
+                <label for="ms">Ms.</label> <br />
+                <input type="radio" id="ms" name="title" />
+            </div>
+            <div>
+                <label for="mrs">Mrs.</label> <br />
+                <input type="radio" id="mrs" name="title" />
+            </div>
+            <div>
+                <label for="name">Name</label><br />
+                <input type="text" id="name" />
+            </div>
+            <div>
+                <label for="email">Email</label><br />
+                <input type="text" id="email" />
+            </div>
+        </form>
+    </fieldset>
+
+    <fieldset>
+        <legend>Payment Information</legend>
+        <div class="payment_form_CC">
+            <select name="creditcard" id="payment_form" class="payment_for_CC_type_select">
+                <option value="visa">Visa</option>
+                <option value="mastercard">Mastercard</option>
+                <option value="american express">American Express</option>
+                <option value="discover">Discover</option>
+            </select>
+            <label for="creditcard" class="payment_for_CC_type">Credit Card Number</label>
+        </div>
+
+        <div>
+            <input type="text" id="expdate" placeholder="xxxx xxxx xxxx xxxx" />
+        </div>
+        <div>
+            <label for="expdate">Expiration Date</label><br />
+            <input type="text" id="expdate" />
+        </div>
+    </fieldset>
+    <input type="submit" class="payment_form" value="Submit Payment" />
+</body>
+
+</html>
