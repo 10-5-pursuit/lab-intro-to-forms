@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Payment Form</h1>
+    <p>Required fields are marked by *</p>
+    <br>
+    <fieldset>
+        <legend>Contact Information</legend>
+  
+        <label for="suffix">Mx.</label>
+        <br>
+        <input type="radio" id="suffix" name="suffix" value="Mx" checked>
+        <br>
+
+        <label for="suffix2">Mr.</label>
+        <br>
+        <input type="radio" id="suffix2" name="suffix" value="Mr">
+        <br>
+
+        <label for="suffix3">Ms.</label><br>
+        <input type="radio" id="suffix3" name="suffix" value="Ms"><br>
+        
+        <label for="suffix4">Mrs.</label><br>
+        <input type="radio" id="suffix4" name="suffix" value="Mrs"><br>
+        
+    
+        <label for="name">Name </label><br>
+        <input type="text" name='name' id='name' required ><br>
+        <label for="email">Email </label><br>
+        <input type="email" name='email' id='email' required >
+
+    </fieldset>
+
+<fieldset>
+   <legend>Payment Information</legend>
+
+    <select name="payment-information" id="payment-information">
+        <optgroup label="Payment type">
+            <option value="visa">visa</option>
+            <option value="paypla">PayPal</option>
+            <option value="applepay">ApplePay</option>
+            <option value="zelle">Zelle</option>
+        </optgroup>
+        
+    </select>
+    <label>Credit Card Number</label><br>
+    
+  <input type="card number" name='card number' id='card number' placeholder='xxxx xxxx xxxx xxxx' required ><br>
+  <label>Expiration Date</label><br>
+  <input type="expiration date" name="expiration date" id="expiration date">
+</fieldset>
+    <button>Submit Payment</button>
+</body>
+
+</html>
