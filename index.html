@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang= en>
+    <head>
+        <link rel="stylesheet" href="/Users/diamondbrown/Documents/Pursuit/lab-intro-to-forms/form.css">
+    </head>
+    <body>
+        <h1>Payment form </h1>
+        <p>Required Fields*</p>
+        <form>
+            <div>
+                <fieldset>
+                    <legend>Contact information</legend>
+                    <label for="mx">Mx.</label><br>
+                    <input type="radio" id="mx" name="person-add" checked><br>
+                    <label for="mr">Mr.</label><br>
+                    <input type="radio" id="mr" name="person-add"><br>  
+                    <label for="ms">Ms.</label><br>
+                    <input type="radio" id="ms" name="person-add"><br>
+                    <label for="mrs">Mrs.</label><br>
+                    <input type="radio" id="mrs" name="person-add"><br>
+                    <label for="name">Name*</label><br>
+                    <input type="textbox" name="name" id="name" placeholder="Name" required><br>
+                    <label for="email">Email*</label><br>
+                    <input type="textbox" name="email" id="email" placeholder="Email" required>
+                </fieldset>
+            </div>
+            <div>
+                <fieldset>
+                    <legend>Payment Information</legend>
+                    <select id="visa">
+                          <option value="visa">Visa</option>
+                          <option value="mastercard">Mastercard</option>
+                          <option value="American Express">American Express</option>
+                          <option value="Discover">Discover</option>
+                      </select><br>
+                    <label for="ccinfo">Credit Card Number*</label><br>
+                    <input type="tel" id="ccnumber" placeholder="xxxx xxxx xxxx xxxx" required><br>
+                    <label for="ex-date">Expiration Date*</label><br>
+                    <input type="textbox" id="experation-date" required><br>
+                </fieldset>  
+            </div>  
+        <input type="button" value="Submit Payment">
+        </form>
+    </body>
+</html>
