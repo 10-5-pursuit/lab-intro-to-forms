@@ -1,0 +1,80 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    width: 600px;
+}
+t
+.title h1{
+    font-weight: bold;
+    font-size: 25px;
+    font-style: bold;
+}
+.title{
+    margin-bottom: 20px;
+}
+.contact-info{
+    border: 1px solid black;
+    display: grid;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    padding-top: -10px;
+    margin-bottom: 15px
+
+}
+.contact-info p{
+    margin-top: -10px;
+    background-color: white;
+    width: 145px;
+    padding-left: 10px;
+    margin-bottom: 5px;
+}
+.text{
+    width: 150px;
+    height: 18px;
+    border-radius: 2px;
+    border: 1px solid #222;
+    padding-left: 5px;
+}
+.radio-btn{
+    display: flex;
+    margin-left: -560px;
+}
+.payment-info{
+    border: 1px solid black;
+    display: grid;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    padding-top: -10px;
+}
+.payment-info p{
+    margin-top: -10px;
+    background-color: white;
+    width: 145px;
+    padding-left: 10px;
+    margin-bottom: 5px;
+}
+.payment-info select{
+    width: 160px;
+    padding: 2px;
+    border-radius: 2px;
+    border: 1px solid #222;
+}
+.card-select{
+    display: flex;
+    margin-bottom: 3px;
+}
+.card-select label{
+    margin-top: 1px;
+    padding-left: 5px;
+}
+#exp-date{
+    height: 22px;
+}
+#card-num{
+    margin-bottom: 5px;
+}
+button{
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 2px;
+    border: 1px solid #222;
+}

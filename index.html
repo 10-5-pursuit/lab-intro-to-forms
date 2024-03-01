@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action=""></form>
+        <section class="title">
+            <h1>Payment Form</h1>
+            <p>Required fields are marked by *</p>
+        </section>
+        <section class="contact-info">
+            <p>Contact Information</p>
+            <label for="mx">Mx.</label>
+            <input type="radio" name="prefix" id="mx" checked class="radio-btn">
+            <label for="mr">Mr.</label>
+            <input type="radio" name="prefix" id="mr" class="radio-btn">
+            <label for="ms">Ms.</label>
+            <input type="radio" name="prefix" id="ms" class="radio-btn">
+            <label for="mrs">Mrs.</label>
+            <input type="radio" name="prefix" id="mrs" class="radio-btn">
+            <label for="name">Name</label>
+            <input type="text" class="text">
+            <label for="email">Email</label>
+            <input type="text" class="text">
+        </section>
+        <section class="payment-info">
+            <p>Payment Information</p>
+            <div class="card-select">
+                <select name="credit-card" id="credit-card">
+                    <option value="visa">Visa</option>
+                    <option value="master">Master Card</option>
+                    <option value="american">American Express</option>
+                </select>
+                <label>Credit Card Number</label>
+            </div>
+            <input type="text" class="text" placeholder="xxxx xxxx xxxx xxxx" id="card-num">
+            <label for="exp-date">Experation Date</label>
+            <input type="date" id="exp-date" class="text">
+
+        </section>
+        <button>Submit Payment</button>
+    </form>
+    
+</body>
+</html>
