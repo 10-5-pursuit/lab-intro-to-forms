@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+</head>
+<body>
+      <h1>Payment Form</h1>
+      <p>Required fields are marked by *</p>
+ <form>
+    <fieldset class="payment-form__contact-info" style="border: solid 1px;">
+            <legend>Contact Information</legend>
+        <div class='person-form__person-div'>
+            <div>
+            <label for="mx.">Mx.</label>
+            <br>
+            <input type="radio" id='mx.' name='person_type' checked> 
+        </div>
+        <div>
+            <label for="mr.">Mr.</label>
+            <br>
+            <input type="radio" id='mr.' name='person_type'>
+        </div>
+        <div>
+            <label for="ms.">Ms.</label>
+            <br>
+            <input type="radio" id='ms.' name='person_type' >  
+        </div>
+        <div>
+            <label for="mrs.">Mrs.</label>
+            <br>
+            <input type="radio" id='mrs.' name='person_type' >   
+        </div>
+        </div>
+            <label for="name">Name</label>
+        <br>
+            <input type="text" id="name" name="name" required>
+        <br>
+            <label for="email">Email</label>
+        <br>
+            <input type="email" id="email" name="email" required>
+        <br>
+    </fieldset>
+    
+    <fieldset> 
+        <legend>Payment Information</legend>
+        <select name="card" id="card" >
+            <option value="visa">Visa</option>
+            <option value="mastercard">Mastercard</option>
+            <option value="american-express">American Express</option>
+            <option value="discover">Discover</option>
+        </select>
+            <br>
+            <label for="credit-card">Credit Card Number</label>
+            <br>
+            <input type="tel" id="credit-card" name="credit-card" placeholder="xxxx xxxx xxxx xxxx" required>
+            <br>
+            <label for="expiration-date">Expiration Date</label>
+            <br>
+            <input type="text" id="expiration-date" name="expiration-date" required>
+            <br>
+        </select>
+    </fieldset>
+             <input type="submit" value="Submit Payment">
+ </form>
+
+</body>
+</html>
