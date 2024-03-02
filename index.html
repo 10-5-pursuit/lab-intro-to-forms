@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+</head>
+<body>
+    <header><h1>
+        Payment Form
+    </h1></header>
+    <p>Required fields are marked by *</p>
+    
+    <form class="payment-form">
+
+        <div class="contact-information" style="border:solid black">
+            <h2>Contact Information</h2>
+            <div class="title">
+              <label for="mx">
+                Mx.
+                <br>
+                <input id="mx" name="title" type="radio" value="mx" checked>
+            </label>
+            <br>
+            <label for="mr">
+                Mr.
+                <br>
+                <input id="mr" name="title" type="radio" value="mr">
+            </label>
+            <br>
+            <label for="ms">
+                Ms.
+                <br>
+                <input id="ms" name="title" type="radio" value="ms">
+            </label>
+            <br>
+            <label for="mrs">
+                Mrs.
+                <br>
+                <input id="mrs" name="title" type="radio" value="mrs">
+            </label>  
+            </div>
+
+            <div class="name">
+                <label for="name">
+                Name*
+                <br>
+            <input id="name" name="name" type="text" required/>
+            </label>
+            </div>
+
+            <div class="email">
+                <label for="email">
+                    Email*
+                    <br>
+                    <input id="email" name="email" type="email" required/>
+                </label>
+            </div>
+                 
+        </div>
+
+        <div class="payment-information" style="border:solid black">
+
+            <h2>Payment Information</h2>
+
+            <div class="credit-card">
+                <label for="credit-card__type">
+                    Select a credit-card-type
+                    <br>
+                    <select id="credit-card" name="credit-card-type">
+                        <option value="visa">Visa</option>
+                        <option value="mastercard">Mastercard</option>
+                        <option value="american-express">American Express</option>
+                        <option value="discover">Discover</option>
+                    </select>
+                </label>
+            </div>
+            
+            <div class="credit-card__info"></div>
+            <label for="credit-card__number">
+                Credit Card Number*
+                <br>
+                <input type="tel" id="credit-card__number" placeholder="xxxx xxxx xxxx xxxx" required>
+            </label>
+            <br>
+            <label for="expiration-date">
+                Expiration Date*
+                <br>
+                <input type="text" id="expiration-date" required>
+
+            </label>
+
+        </div>
+        
+        <div class="submit-button">
+            <label for="submit-button">
+                <input type="submit" id="submit-button" value="Submit Payment">
+            </label>
+            
+        </div>
+    </form>
+
+</body>
+</html>
