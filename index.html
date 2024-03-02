@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M.O.K.A Payment Form</title>
+</head>
+<body>
+    <header>
+        <h1>Payment Form</h1>
+        <p>Required fields are marked by *</p>
+    </header>
+    <form>
+        <fieldset>
+            <legend>Contact Information</legend> 
+                <label>
+                    Mx.
+                    <br>
+                    <input id="mx" name="honorifics" type="radio" value="Mx." checked/>
+                </label>
+                    <br>
+                <label>
+                    Mr.
+                    <br>
+                    <input id="mr" name="honorifics" type="radio" value="Mr."/>
+                </label>
+                    <br>
+                <label>
+                    Ms.
+                    <br>
+                    <input id="ms" name="honorifics" type="radio" value="Ms."/>
+                </label>
+                    <br>
+                <label>
+                    Mrs.
+                    <br>
+                    <input id="mrs" name="honorifics" type="radio" value="Mrs."/>
+                </label>
+                    <br>
+                <label for="user-name">Name</label>
+                    <br>
+                <input id="user-name" name="username" type="text" placeholder="Enter first name" required/>
+                    <br>
+                <label for="user-email">Email</label>
+                    <br>
+                <input id="user-email" name="useremail" type="email" placeholder="ilovemylife@gmail.com" required/>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Payment Information</legend>
+                <label>
+                    <select id="payment-info" name="cc-type" required>
+                        <option>Visa</option>
+                        <br>
+                        <option value ="mastercard">Mastercard</option>
+                        <option value ="discover">Discover</option>
+                        <option value ="american-express">American Express</option>
+                    </select>
+                    Credit Card Number
+                </label>
+                <br>
+                <input id="cc-num" name="ccnumber" type="tel" placeholder="xxxx xxxx xxxx xxxx" required/>
+                <br>
+                <label for="expiration-date">Expiration Date</label>
+                <br>
+                <input id="expiration-date" name="ccexpiration" type="text" placeholder="MM/YYYY" maxlength="7" required/>
+        </fieldset>
+        
+        <input type="submit" value="Submit Payment"/>
+    </form>
+</body>
+</html>
