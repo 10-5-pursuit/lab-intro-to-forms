@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=l">
+    <title>Payment Form</title>
+</head>
+
+<body>
+    <h1>Payment Form</h1>
+
+    <p>Requred fields are marked by *</p>
+
+    <form action="action_dest.html" method="get">
+        <fieldset>
+            <legend>Contact Information</legend>
+
+            <label for="mx">Mx.</label><br>
+            <input type="radio" id="mx" name="contactGroup" value="b1" checked><br>
+
+            <label for="mr">Mr.</label><br>
+            <input type="radio" id="mr" name="contactGroup" value="b2"><br>
+
+            <label for="ms">Ms.</label><br>
+            <input type="radio" id="ms" name="contactGroup" value="b3"><br>
+
+            <label for="mrs">Mrs.</label><br>
+            <input type="radio" id="mrs" name="contactGroup" value="b4"><br>
+
+            <label for="name">Name *</label><br>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="email">Email *</label><br>
+            <input type="email" id="email" name="email" required><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Payment Information</legend>
+
+
+            <select name="cards" id="cards">
+                <option value="visa">Visa</option>
+                <option value="mastercard">Mastercard</option>
+                <option value="american_express">American Express</option>
+                <option value="discover">Discover</option>
+            </select>
+            <label for="cardNum">Credit Card Number</label> <br>
+            <input type="tel" id="cardNum" name="cardNum" placeholder="xxxx xxxx xxxx xxxx" required><br>
+
+            <label for='expDate'>Expiration Date</label><br>
+            <input type='text' id='expDate' name='expDate' required><br>
+        </fieldset>
+
+        <button type="submit">Submit Payment</button>
+    </form>
+
+
+    <script>
+    </script>
+
+</body>
+
+</html>
