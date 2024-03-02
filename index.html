@@ -39,17 +39,17 @@
                     <br>
                 <label for="user-name">Name</label>
                     <br>
-                <input id="user-name" name="username" type="text" placeholder="Enter first name"/>
+                <input id="user-name" name="username" type="text" placeholder="Enter first name" required/>
                     <br>
                 <label for="user-email">Email</label>
                     <br>
-                <input id="user-email" name="useremail" type="email" placeholder="ilovemylife@gmail.com"/>
+                <input id="user-email" name="useremail" type="email" placeholder="ilovemylife@gmail.com" required/>
         </fieldset>
         
         <fieldset>
             <legend>Payment Information</legend>
                 <label>
-                    <select id="payment-info" name="cc-type">
+                    <select id="payment-info" name="cc-type" required>
                         <option>Visa</option>
                         <br>
                         <option value ="mastercard">Mastercard</option>
@@ -59,11 +59,11 @@
                     Credit Card Number
                 </label>
                 <br>
-                <input id="cc-num" name="ccnumber" type="tel" placeholder="xxxx xxxx xxxx xxxx"/>
+                <input id="cc-num" name="ccnumber" type="tel" placeholder="xxxx xxxx xxxx xxxx" required/>
                 <br>
                 <label for="expiration-date">Expiration Date</label>
                 <br>
-                <input id="expiration-date" name="ccexpiration" type="text" placeholder="MM/YYYY" maxlength="7"/>
+                <input id="expiration-date" name="ccexpiration" type="text" placeholder="MM/YYYY" maxlength="7" required/>
         </fieldset>
         
         <input type="submit" value="Submit Payment"/>
