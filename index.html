@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+</head>
+
+<body>
+    <h1>Payment Form</h1>
+    <section>
+        <p>
+            Required fields are marked by *
+        </p>
+    </section>
+
+    <form action="/submit-method" method="post">
+
+        <fieldset>
+            <legend> Contact Information</legend>
+            <label for="titleMx">Mx.</label>
+            <input type="radio" id="titleMx" name="title" value="Mx" checked>
+            <label for="titleMr">Mr.</label>
+            <input type="radio" id="titleMr" name="title" value="Mr">
+            <label for="titleMs">Ms.</label>
+            <input type="radio" id="titleMs" name="title" value="Ms">
+            <label for="titleMrs">Mrs.</label>
+            <input type="radio" id="titleMrs" name="title" value="Mrs">
+
+            <br><br>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Payment Information</legend>
+
+            <label for="cardType" >Card Type:</label>
+            <select id="cardType" name="cardType" required>
+                <option value="Visa">Visa</option>
+                <option value="Mastercard">Mastercard</option>
+                <option value="American-Express">American Express</option>
+                <option value="Discover">Discover</option>
+            </select>
+            <br>
+
+            <label for="cardNumber">Credit Card Number:</label>
+            <input type="tel" id="cardNumber" name="cardNumber" placeholder="xxxx xxxx xxxx xxxx" required>
+            <br>
+
+            <label for="expiration-date">Expiration Date:</label>
+            <input type="date" id="expiration-date" name="expirationDate" required>
+            <br>
+        </fieldset>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>
