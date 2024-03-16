@@ -1,0 +1,59 @@
+body{
+    height: 95vh;
+    width: 45vh;
+    box-sizing: border-box;
+}
+
+.contact-info{
+    border: 2px solid black;
+    padding: 15px;
+    
+}
+
+.radio-button{
+    color: blue;
+    
+}
+
+#contact-info-header{
+    margin-top: -25px;
+    margin-left: 15px;
+    background: white;
+    width: 135px;
+    padding-left: 5px;
+}
+
+.cc-info{
+    border: 2px solid black;
+    padding: 15px;
+    margin-top: 3%;
+}
+
+#cc-number{
+    font-size: 10px;
+    width: 140px;
+    padding: 3px;
+    color: gray;
+    margin-top: 1%;
+}
+
+#payment-info-header{
+    margin-top: -25px;
+    margin-left: 15px;
+    background: white;
+    width: 140px;
+    padding-left: 5px;
+
+}
+
+#expiration-date-header{
+    margin-bottom: .5px;
+}
+
+#expiration-date{
+    width: 145px
+}
+
+button{
+    margin-top: 3%;
+}

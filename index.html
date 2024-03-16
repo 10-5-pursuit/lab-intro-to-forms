@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Lab</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Payment Form</h1>
+    <p>Required fields are marked by *</p>
+    
+    
+    <form class="container">
+        <div class="contact-info">
+            <p id="contact-info-header">Contact Information</p>
+            <label for="Mx">
+                Mx.
+            </label><br>
+            <input class="radio-button" id="Mx" name="contact-info" type="radio" value="Mx" checked />
+            <label for="Mr"><br>
+                Mr.
+            </label><br>
+            <input class="radio-button" id="Mr" name="contact-info" type="radio" value="Mr" />
+            <label for="Ms"><br>
+                Ms.
+            </label><br>
+            <input class="radio-button" id="Ms" name="contact-info" type="radio" value="Ms" />
+            <label for="Mrs"><br>
+                Mrs.
+            </label><br>
+            <input class="radio-button" id="Mrs" name="contact-info" type="radio" value="Mrs" />
+            <label><br>
+                
+            <label for="name">
+                Name
+            </label><br>
+            <input id="name" name="first-name" type="text" value="" required/>
+            
+            <label for="email"><br>
+                Email
+            </label><br>
+            <input id="email" name="email" type="text" value="" required/>
+        </div>
+    
+        <div class="cc-info">
+            <p id="payment-info-header">Payment Information</p>
+    
+            <select id="cc-types" name="cc-types">
+                <option hidden>choose one</option>
+                <option value="visa">Visa</option>
+                <option value="mastercard">Mastercard</option>
+                <option value="american-express">American-Express</option>
+                <option value="discover">Discover</option>
+            </select>
+    
+           
+            <label>Credit Card Number</label><br>
+            <input id="cc-number" name="cc-number" type="tel" value="xxxx xxxx xxxx xxxx">
+            <p id="expiration-date-header">Expiration Date *</p>
+            <input id="expiration-date" name="expiration-date" type="text" required>
+    
+        </div>
+        
+        <button type="submit">Submit Payment</button>
+    
+    </form><br>
+    
+    
+</body>
+</html>
